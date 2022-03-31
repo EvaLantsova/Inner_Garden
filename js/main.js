@@ -30,8 +30,8 @@ function changeSVGColor(circle, color) {
     h = 0.6 * circle.clientHeight
     w = 0.6 * circle.clientWidth
     ob.style.left = '20%'
-    createSepal(circle, 'eyesSm')
-    createStalk(circle, 'eyeBrowsSm')
+    createSepal(circle, 'sepal')
+    createStalk(circle, 'stalk')
 
   } else {
 h = circle.clientHeight
@@ -56,25 +56,6 @@ console.log('changed')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.querySelector(".but").onclick = function (event) {
   event.stopPropagation()
   frame.innerHTML = '';
@@ -95,26 +76,7 @@ document.querySelector(".but").onclick = function (event) {
 window.addEventListener('resize', function () {
   frame.innerHTML = ''
   occupated = []
-  // if (container.clientWidth < 840) {
-  //   frame.style.width = (container.clientWidth * 0.8) + 'px'
-  //   frame.style.height = (container.clientWidth ) + 'px'
 
-  // } else {
-  //   frame.style.width = (container.clientWidth * 0.5) + 'px'
-  //   frame.style.height = (container.clientWidth * 0.7) + 'px'
-  // }
-
-  frameW = frame.clientWidth
-  frameH = frame.clientHeight
-  sizeMin = 0.14 * frameW
-  sizeMax = 0.20 * frameW
-  dfaceMin = 0.24 * frameW
-  dfaceMax = 0.30 * frameW
-  n = drawLogo(frame)
-  generateLogo()
-  for (var i = 0; i < numFaces; i++) {
-    createCircle(frame, n)
-  }
 })
 
 document.addEventListener('DOMContentLoaded', () => {
