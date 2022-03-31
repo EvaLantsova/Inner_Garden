@@ -1,1 +1,234 @@
 @import url(reset.css);
+
+@font-face {
+  font-family: 'Prelom';
+  src: url('../fonts/PrelomRegular.ttf');
+  src: url('../fonts/PrelomSemiBold.otf');
+}
+
+.Garden {
+  margin: auto;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+
+.but {
+  font-family: "Prelom";
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.476vw 0.893vw;
+  font-size: 1.3vw;
+  position: static;
+  width: 14vw;
+  height: 3vw;
+}
+
+
+.info {
+  padding-left: 10vw;
+}
+
+.but:hover {
+  transition: 0.3s;
+}
+
+h1 {
+  font-family: 'Prelom';
+  font-style: SemiBold;
+  font-weight: bold;
+  font-size: 3.810vw;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+
+  color: ##4C5A2F;
+
+}
+
+.text p {
+  width: 28vw;
+  font-family: 'Prelom';
+  font-style: light;
+  font-weight: normal;
+  font-size: 1.429vw;
+  line-height: 1.964vw;
+  padding-bottom: 1vw;
+  color: ##4C5A2F;
+}
+
+.about {
+  padding-top: 14vw;
+  width: 26vw;
+}
+
+h3 {
+  font-family: 'Prelom';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.429vw;
+  line-height: 2vw;
+  padding-bottom: 0.5vw;
+}
+
+.about p {
+  font-family: 'Prelom';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.833vw;
+  line-height: 1.190vw;
+
+  color: #4C5A2F;
+}
+
+/*.typography_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}*/
+
+
+.frame {
+  position: relative;
+  margin: 20px auto;
+  width: 520px;
+  height: 720px;
+  background: linear-gradient(#2D6BFF, #D0DFDE);
+  overflow: hidden;
+  box-shadow: 0px 0px 40px rgba(62, 62, 62, 0.3);
+  /* border-radius: 2%; */
+}
+
+@keyframes df {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media screen and (max-width: 1440px) {
+  .frame {
+    width: 520px;
+    height: 720px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .frame {
+    width: 420px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+
+  .info {
+    padding-left: 0vw;
+  }
+
+  .Garden {
+    height: 140vh;
+  }
+  .frame {
+    width: 420px;
+    height: 600px;
+  }
+
+  .navbar {
+    padding-top: 2vw;
+  }
+
+  .text {
+    padding-bottom: 0vw;
+  }
+
+  .Garden {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 9vw;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .text p {
+    font-size: 4vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .about p {
+    font-size: 2.8vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .but {
+    font-size: 4vw;
+    padding: 0.476vw 0.893vw;
+    position: static;
+    width: 40vw;
+    height: 8vw;
+
+
+    /* System/Deep Green */
+
+    background: #41EF3E;
+    border-radius: 2vw;
+    border: none;
+
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .frame {
+    width: 400px;
+    height: 540px;
+  }
+
+  .text {
+    padding-bottom: 2vw;
+  }
+
+  .Garden {
+    flex-direction: column;
+    height: 110vh;
+  }
+
+  h1 {
+    font-size: 9vw;
+    padding-top: 10vw;
+    padding-bottom: 4vw;
+  }
+
+  p {
+    font-size: 4vw;
+    width: 65vw;
+    padding-bottom: 4vw;
+    line-height: 100%;
+  }
+
+  .but {
+    font-size: 4vw;
+    padding: 0.476vw 0.893vw;
+    position: static;
+    width: 40vw;
+    height: 8vw;
+
+    background: #41EF3E;
+    border-radius: 2vw;
+    border: none;
+
+  }
+}
